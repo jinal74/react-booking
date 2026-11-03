@@ -1,0 +1,84 @@
+.dashboard-main .count-bxs-main .count-bxs-left {
+    height: 100%;
+    background-color: #00d95b;
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.dashboard-main .count-bxs-main .count-bxs-left span {
+    line-height: 2.7;
+}
+
+.dashboard-main .count-bxs-main .count-bxs-right {
+    height: 100%;
+    padding: 20px 10px;
+    background-color: #ffffff;
+}
+
+.dashboard-main .count-bxs-main .count-single-bx {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-main .count-bxs-main .count-bxs-bottom div {
+    width: 160px;
+    height: 150px;
+    margin: 0 10px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.reopen-bx {
+    background-color: #808080 !important;
+}
+
+.meal-auto-bx {
+    background-color: #d3d3d3 !important;
+}
+
+.reports-bx {
+    background-color: #243843 !important;
+}
+
+.fns-production-bx {
+    background-color: #f7a700 !important;
+}
+
+.root-plnr-bx {
+    background-color: #00d95b !important;
+}
+
+.dashboard-main .count-bxs-main .count-bxs-bottom div i {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.dashboard-main .count-bxs-main .count-bxs-bottom div span {
+    display: block;
+    font-size: 12px;
+}
+
+.dashboard-main .count-bxs-main .new_button_square_big {
+    background-color: #ceeafe;
+    color: #0195f8;
+    box-shadow: none;
+    padding: 10px 20px;
+}
+
+.red-yllw-tag {
+    border-radius: 20px;
+    background-color: #fde68a;
+    color: #e15500;
+    padding: 2px 10px;
+}

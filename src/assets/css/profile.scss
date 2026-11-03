@@ -1,0 +1,1137 @@
+h2 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+h1, h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 small, h3 .small, h3 small {
+    font-size: 65%;
+}
+
+.spacer_top {
+    margin-top: 40px;
+}
+
+.spacer_bottom {
+    margin-bottom: 40px;
+}
+
+.spacer-top {
+    padding-top: 40px;
+}
+
+.spacer-bottom {
+    padding-bottom: 40px;
+}
+
+.marginBottom {
+    margin-bottom: 20px;
+}
+
+.marginTop {
+    margin-top: 20px;
+}
+
+.paddingBottom {
+    padding-bottom: 42px;
+}
+
+.paddingTop {
+    padding-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.back_content {
+    background-color: #F5F6F6;
+}
+
+#menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10px;
+    left: 12px;
+    z-index: unset;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle.profileSidebar {
+    padding: 5px 15px 10px 0px;
+}
+
+#menuToggle.profileSidebar input {
+    width: 174px;
+}
+
+#menuToggle input {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 99;
+}
+
+#menuToggle.profileSidebar .TriggerButton {
+    width: fit-content;
+    padding: 5px 15px 5px 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px #ccc;
+}
+
+#menu_icon_side.fix_trigger_position {
+    top: 15%;
+    left: 280px;
+    position: fixed;
+    z-index: 1000;
+}
+
+#menuToggle.profileSidebar #menu {
+    position: fixed;
+    margin: -110px 0 0 -50px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 15px;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+#menu {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    box-shadow: 0 0 10px #dbdfe0;
+    margin: -75px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.closeSidebarProfile {
+    display: none;
+}
+
+#menuToggle input:checked~ul .closeSidebarProfile {
+    display: block;
+    position: fixed;
+    left: 280px;
+    z-index: 9999;
+    top: 15%;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
+#menu li {
+    padding: 2px 0;
+    transition-delay: 2s;
+}
+
+.responsive-container-admin {
+    padding-left: 42px;
+    padding-right: 42px;
+}
+
+.card_table {
+    background-color: #fff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.profile .profileSelected {
+    background-color: #515151;
+    color: #fff;
+    padding: 0px 10px;
+    margin: 3px 5px;
+    border-radius: 5px;
+    width: auto;
+}
+
+.form-control.border-bottom-input {
+    border: 0;
+    background-image: linear-gradient(#243843, #243843), linear-gradient(#D2D2D2, #D2D2D2);
+    background-size: 0 2px, 100% 1px;
+    background-repeat: no-repeat;
+    background-position: center bottom, center calc(100% - 1px);
+    background-color: transparent;
+    transition: all 0s ease-out;
+    float: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding-left: 0;
+}
+
+.form-group label.control-label {
+    font-size: 11px;
+    line-height: 1.07143;
+    color: #AAAAAA;
+    font-weight: 400;
+    margin: 16px 0 0 0;
+}
+
+.profileDeselected {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.profile .allergen.profileSelected,
+.profile .dislike.profileSelected {
+    background-color: #515151;
+    color: #fff;
+}
+
+.profile .allergen,
+.profile .dislike {
+    padding: 5px 10px;
+    background-color: #f1f3f7;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.profile .new_card_points {
+    border-radius: 10px;
+    width: auto;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11), 0 3px 6px rgba(0, 0, 0, 0.13);
+    overflow: hidden;
+    text-align: center;
+    background: #fff;
+}
+
+.profile .new_card_points h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.new_button_square_big.bg-dark:hover {
+    color: #ffffff;
+}
+
+.profile .banner_button {
+    border-radius: 10px;
+    height: 200px;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11), 0 3px 6px rgba(0, 0, 0, 0.13);
+    overflow: hidden;
+    background: linear-gradient(90deg, #1e4a96 0%, #00d9b1 150%);
+}
+
+.profile .banner_button.tall {
+    width: 100%;
+    height: fit-content;
+    min-height: 272px;
+    margin: 16px;
+    text-align: center;
+}
+
+.profile .banner_button.banner2 {
+    background: linear-gradient(90deg, #08f 0%, #005fb1 60%);
+}
+
+.profile .banner_button .banner_text {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile .banner_button h1 {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 11.2px;
+}
+
+.profile .banner_button .banner_image {
+    flex-grow: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/profile-redeem.svg');
+    background-size: contain;
+}
+
+.profile .banner_button .banner_image.img1 {
+    background-image: url('../images/profile-invite.svg');
+}
+
+.profile .banner_button .banner_image i {
+    max-height: 112px;
+}
+
+.profile .banner_button i {
+    position: relative;
+    color: #00d95b;
+    left: -16px;
+    font-size: 130px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.cart_new .btn_cart_next {
+    background: #243843;
+    box-shadow: 0 2px 7px 0 rgba(120, 137, 149, 0.25);
+    margin: 30px 0;
+    padding: 17px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+}
+
+.profile .banner_button .btn_cart_next.btn_banner {
+    background: #ff2c9c;
+    display: block;
+    border: 1px solid transparent;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 6px 14px;
+    font-weight: 700;
+}
+
+.profile .big_banner {
+    border-radius: 10px;
+    height: 270px;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11), 0 3px 6px rgba(0, 0, 0, 0.13);
+    overflow: hidden;
+    background: #965df1;
+}
+
+.profile .big_banner img {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 160px;
+}
+
+.navProfile>li {
+    position: relative;
+    display: block;
+}
+
+.profile .avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 50px auto;
+}
+
+.profile .avatar-upload .avatar-edit {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+}
+
+.profile .avatar-upload .avatar-edit input {
+    display: none;
+}
+
+.profile .avatar-upload .avatar-edit input+label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #ffffff;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+
+.profile .avatar-upload .avatar-edit input+label:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "";
+    color: $primary-theme;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.profile .avatar-upload .avatar-preview {
+    width: 147px;
+    height: 147px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #f8f8f8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.profile .avatar-upload .avatar-preview div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.back_sidemenu .navProfile-stacked.navProfile>li>a {
+    padding: 0;
+    position: relative;
+    display: block;
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+    padding-left: 1.5rem !important;
+    transition: transform 0.35s ease !important;
+}
+
+.subNav li a {
+    color: #0f172a;
+    font-size: 14px;
+}
+
+li>a>small {
+    top: -14px;
+    position: relative;
+}
+
+.navProfile-stacked>li+li {
+    margin-top: 2px;
+    margin-left: 0;
+}
+
+.navProfile-stacked>li {
+    float: none;
+    line-height: 13px;
+}
+
+.spacer {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.subNav li a i {
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.back_sidemenu .subNav>.active a:first-child {
+    color: #0f172a;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.back_sidemenu .active .active-menu-span {
+    width: 0.5rem;
+    background-color: $primary-theme;
+    bottom: 0;
+    top: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.navProfile-stacked.navProfile>li>a>span>svg {
+    height: 20px;
+}
+
+.navProfile>li>a:focus, .navProfile>li>a:hover {
+    text-decoration: none;
+    border-bottom: 0px solid silver;
+}
+
+.subNav li a:hover {
+    color: #00d95b;
+}
+
+.subNav .active a {
+    font-weight: 700;
+}
+
+.subNav .menuSubMenu .active a {
+    color: #27a4e2 !important;
+}
+
+.menuSubMenu {
+    padding-left: 10px;
+}
+
+.back_sidemenu {
+    position: relative;
+    background-color: #ffffff;
+}
+
+.padding-xs-col {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+// select meals
+
+.card_footer {
+    background-color: #f1f1f1;
+}
+
+.subscriptions.square_badge_small {
+    font-size: 10px;
+    border-radius: 5px;
+    background-color: $primary-theme;
+    margin-top: -27px;
+}
+
+.select-meals-main .card_table.closed .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.select-meals-main .card_table td {
+    padding: 0;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 80px;
+    border: 1px dashed #0095f8;
+    background: rgba(3, 169, 244, 0.15);
+    color: #0095f8;
+    border-radius: 5px;
+    order: 1;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-info:hover {
+    background: rgba(3, 169, 244, 0.3);
+}
+
+.stats_page {
+    background: #F5F6F6;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.stats_page .mealList {
+    grid-area: mealList;
+    max-width: 100%;
+}
+
+.card-stats {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+}
+
+.table-responsive {
+    border: none;
+}
+
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+
+.card-stats .calendar_title {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+div.table-responsive>div.dataTables_wrapper>div.row {
+    margin: 0;
+}
+
+div.table-responsive>div.dataTables_wrapper>div.row>div[class^="col-"]:first-child {
+    padding-left: 0;
+}
+
+div.dataTables_wrapper div.dataTables_filter label,
+div.dataTables_wrapper div.dataTables_length label {
+    font-weight: normal;
+    text-align: left;
+    white-space: nowrap;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    width: 75px;
+    display: inline-block;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: right;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 0.5em;
+    display: inline-block;
+    width: auto;
+}
+
+.stats_page .user_profile_objective {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stats_page .user_profile_objective .formValue {
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: left;
+    padding-bottom: 8px;
+}
+
+.stats_page .user_profile_objective .text_label {
+    color: #999999;
+    margin-bottom: 3px;
+}
+
+.stats_page .user_profile_objective .text_label, 
+.stats_page .user_profile_objective .text_value {
+    width: 100%;
+    line-height: 132%;
+}
+
+.stats_page .user_setted_macros {
+    margin-top: 1rem;
+}
+
+.stats_page .user_setted_macros table {
+    width: 100%;
+}
+
+.stats_page .user_setted_macros table thead {
+    border-top: 0;
+    border-bottom: 1px;
+    border-color: #999999;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    color: #999999;
+}
+
+.stats_page .user_setted_macros table tr {
+    display: flex;
+    align-items: center;
+}
+
+.stats_page .user_setted_macros table td, 
+.stats_page .user_setted_macros table th {
+    text-align: center;
+    flex-basis: 100%;
+    color: #333;
+}
+
+.stats_page .user_setted_macros table th {
+    font-weight: normal;
+    line-height: 136%;
+    padding-bottom: 0.5em;
+}
+
+.btn-save {
+    width: fit-content;
+    padding: 8px 16px;
+    background-color: $primary-theme;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+}
+
+.card-stats .calendar_title {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.stats_page .calendar .card-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.stats_page .calendar .rdrDay .rdrStartEdge,
+.stats_page .calendar .rdrDay .rdrEndEdge,
+.stats_page .calendar .rdrDay .rdrInRange {
+    color: $primary-theme !important;
+}
+
+.stats_page .active > .page-link {
+    z-index: 3;
+    color: #ffffff;
+    background-color: $primary-theme;
+    border-color: #ffffff;
+}
+
+.stats_page .mealList th:not(:first-child):not(:last-child) {
+    font-size: 11.2px;
+}
+
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.nutrition_calculator__btn-item {
+    flex-basis: 100%;
+    border: 1px solid $primary-theme;
+    border-right: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: unset;
+    background-color: white;
+}
+
+.nutrition_calculator__btn-item:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.nutrition_calculator__btn-item:last-child {
+    border-radius: 0 10px 10px 0;
+    border-right: 1px solid $primary-theme;
+}
+
+.nutrition_calculator__btn-item.active {
+    background-color: $primary-theme;
+    color: #ffffff;
+}
+
+.nutrition_calculator__input {
+    position: relative;
+    width: 50%;
+}
+
+.nutrition_calculator__input input {
+    border-radius: 8px;
+    border: 1px solid $primary-theme;
+    background-color: unset;
+    padding: 8px 16px;
+    padding-right: 60px;
+    text-align: center;
+}
+
+input[type="number"] {
+    color: black;
+}
+
+.nutrition_calculator__input-unit {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 15px;
+    top: 0;
+    height: 100%;
+}
+
+.nutrition_calculator label {
+    margin: 0;
+    font-weight: 300;
+    color: #333333;
+}
+
+.nutrition_calculator__btn-calculate {
+    width: 75%;
+    background-color: $primary-theme;
+    color: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.modal.small_modal_action_content p {
+    font-size: 25px;
+    color: #6D6D6D;
+}
+
+.confirm_nutrition_calculator__input {
+    display: flex;
+    max-width: 300px;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    padding-inline: 15px;
+    gap: 10px;
+}
+
+.confirm_nutrition_calculator__input label {
+    flex: 1;
+}
+
+.confirm_nutrition_calculator__input input {
+    border-radius: 8px;
+    border: 1px solid $primary-theme;
+    background-color: unset;
+    padding: 8px 16px;
+    padding-right: 60px;
+    text-align: center;
+    max-width: 180px;
+}
+
+.confirm_nutrition_calculator__input input:disabled {
+    background-color: #ebebe4;
+}
+
+.confirm_nutrition_calculator__input-unit {
+    position: absolute;
+    right: 30px;
+}
+
+.confirm_nutrition_calculator .max-width-300 {
+    max-width: 300px;
+}
+
+.nutrition_calculator .togglebutton label {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.togglebutton label input[type=checkbox] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.togglebutton label .toggle {
+    text-align: left;
+    margin-left: 0px;
+    position: relative;
+}
+
+.togglebutton label .toggle {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 18px;
+    background-color: #e6e9ec;
+    border-radius: 15px;
+    margin-right: 15px;
+    transition: background 0.3s ease;
+    vertical-align: middle;
+}
+
+.togglebutton label .toggle:after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: #243843;
+    border-radius: 20px;
+    position: absolute;
+    border: 1px solid #243843;
+    transition: left 0.8s ease, background 0.8s ease, box-shadow 0.1s ease;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.togglebutton label .toggle:after {
+    background-color: #243843 !important;
+    border-color: #243843 !important;
+}
+
+.cart_new .credit_card {
+    background: #ffffff;
+    border-radius: 6px;
+    border: none;
+    color: #484848;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    width: 320px;
+    height: 190px;
+    box-shadow: 0 0 23px 0 transparent;
+    transition: margin 0.3s ease, -webkit-box-shadow 0.3s ease;
+    transition: margin 0.3s ease, box-shadow 0.3s ease;
+    transition: margin 0.3s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+    perspective: 600px;
+}
+
+.cart_new .del-card {
+    position: absolute;
+    z-index: 9999;
+    border: 4px solid #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-self: baseline;
+    padding: 0;
+    border-radius: 99px;
+    font-size: 13px;
+    line-height: 15px;
+    border-style: solid;
+    border-width: 1px;
+    transition: 0.2s all ease-in-out;
+    text-align: left;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #f70000;
+    border-color: #f70000;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    top: -8px;
+    right: -8px;
+    width: 22px;
+    height: 22px;
+}
+
+.cart_new .card__part {
+    box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    display: inline-block;
+    width: 320px;
+    height: 190px;
+    background-color: #0079eb;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+.cart_new .card__front {
+    padding: 18px;
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.cart_new .card__back {
+    padding: 18px 0;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    overflow: hidden;
+}
+
+.corner-ribbon {
+    width: 200px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    z-index: 99999;
+}
+
+.corner-ribbon.sticky {
+    position: fixed;
+}
+
+.corner-ribbon.shadow {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.corner-ribbon.top-left {
+    top: 25px;
+    left: -50px;
+    -webkit-transform: rotate(-45deg);
+}
+
+.corner-ribbon.blue {
+    background: #39d;
+}
+
+.cart_new .credit_card .corner-ribbon {
+    display: none;
+}
+
+.cart_new .card__square {
+    border-radius: 5px;
+    height: 30px;
+}
+
+.cart_new .card__back-square {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.cart_new .card__logo {
+    height: 16px;
+}
+
+.cart_new .card__back-logo {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.cart_new .card__front-logo {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+.cart_new .card_numer {
+    display: block;
+    width: 100%;
+    word-spacing: 4px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.cart_new .card__label {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+}
+
+.cart_new .card__info {
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.cart_new .card__black-line {
+    margin-top: 5px;
+    height: 38px;
+    background-color: #303030;
+}
+
+.cart_new .card__back-content {
+    padding: 15px 15px 0;
+}
+
+.cart_new .card__secret {
+    padding: 5px 12px;
+    background-color: #fff;
+    position: relative;
+}
+
+.cart_new .card__secret--last {
+    color: #303030;
+    text-align: right;
+    margin: 0;
+    font-size: 14px;
+}
+
+.cart_new .card__secret:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    height: calc(100% + 6px);
+    width: calc(100% - 42px);
+    border-radius: 4px;
+    background: repeating-linear-gradient(45deg, #ededed, #ededed 5px, #f9f9f9 5px, #f9f9f9 10px);
+}
+
+.cart_new .credit_card:hover {
+    -webkit-box-shadow: 0 6px 23px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 23px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.cart_new .credit_card:hover .card__front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+.cart_new .card:hover .card__back, .cart_new .credit_card:hover .card__back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+}
+
+.profile .shop_bag_img {
+    height: 75px;
+}
+
+.profile .bg_block_small {
+    background: #00d95b;
+    padding: 5px 13px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #fff;
+    width: auto;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.form-group label.control-label {
+    font-size: 11px;
+    line-height: 1.07143;
+    color: #AAAAAA;
+    font-weight: 400;
+    margin: 16px 0 0 0;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .responsive-container-admin {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .nutrition_calculator .w-md-unset {
+        width: unset !important;
+    }
+
+    .nutrition_calculator .flex-basis-md-35 {
+        flex-basis: 35%;
+    }
+
+    .nutrition_calculator .flex-basis-md-65 {
+        flex-basis: 65%;
+    }
+
+    .nutrition_calculator .flex-basis-md-50 {
+        flex-basis: 50%;
+    }
+}
